@@ -1,5 +1,4 @@
-import { DataBase, Reads } from '../../data/dataBase'
-
+import { useState } from 'react'
 import {
   Refs,
   Title,
@@ -19,9 +18,10 @@ import {
   WatchDescription
 } from './styles'
 
+import { DataBase, Reads } from '../../data/dataBase'
+
 import unchecked from '../../assets/unchecked.svg'
 import checked from '../../assets/checked.svg'
-import { useEffect, useState } from 'react'
 
 interface SessionProps extends DataBase {
   inverted?: boolean
