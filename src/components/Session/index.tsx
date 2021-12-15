@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   Refs,
   Title,
@@ -23,8 +22,10 @@ import { DataBase, Reads } from '../../data/dataBase'
 import unchecked from '../../assets/unchecked.svg'
 import checked from '../../assets/checked.svg'
 
-interface SessionProps extends DataBase {
+export interface SessionProps extends DataBase {
   inverted?: boolean
+  onCheckRead: any
+  reads: Reads[]
 }
 
 export function Session({
@@ -35,20 +36,10 @@ export function Session({
   videoUrl,
   watch,
   title,
-  read,
   week,
+  reads,
+  onCheckRead,
 }: SessionProps) {
-  const [reads, setReads] = useState<Reads[]>(read)
-
-  const onCheckRead = (date: string) => {
-    const updatedReads = reads.map(read => {
-      if (read.date === date) return { ...read, checked: !read.checked };
-      return { ...read };
-    });
-
-    setReads(updatedReads);
-  }
-
   return (
     <>
       {!inverted ?
@@ -68,7 +59,7 @@ export function Session({
               <BlockLabel>PARA LER</BlockLabel>
               {reads.map(ref =>
                 <>
-                  <Refs className={ref.checked ? "opacity" : "default"}>
+                  <Refs className={ref.checked ? "opacity" : "default"} key={ref.date}>
                     <div>
                       {ref.checked ?
                         <button onClick={() => onCheckRead(ref.date)}>
@@ -126,7 +117,7 @@ export function Session({
               <BlockLabel>PARA LER</BlockLabel>
               {reads.map(ref =>
                 <>
-                  <Refs className={ref.checked ? "opacity" : "dafault"}>
+                  <Refs className={ref.checked ? "opacity" : "dafault"} key={ref.date}>
                     <div>
                       {ref.checked ?
                         <button onClick={() => onCheckRead(ref.date)}>

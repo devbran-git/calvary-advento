@@ -71,37 +71,37 @@ export const dataBase = {
     memorize: '“Ele veio e anunciou paz a vocês que estavam longe e aos que estavam perto.” - Efésios 2:17',
     read: [
       {
-        id: '1',
+        id: '7',
         date: 'SEG 06/12',
         ref: 'Números 6:24-26',
         checked: false
       },
       {
-        id: '2',
+        id: '8',
         date: 'TER 07/12',
         ref: 'Isaías 9:6-7',
         checked: false
       },
       {
-        id: '3',
+        id: '9',
         date: 'QUA 08/12',
         ref: 'Lucas 2:9-14',
         checked: false
       },
       {
-        id: '4',
+        id: '10',
         date: 'QUI 02/12',
         ref: 'Colossenses 1:19-20',
         checked: false
       },
       {
-        id: '5',
+        id: '11',
         date: 'SEX 03/12',
         ref: 'Efésios 2:14-18',
         checked: false
       },
       {
-        id: '6',
+        id: '12',
         date: 'SAB 04/12',
         ref: '2 Tessalonicenses 3:16',
         checked: false
@@ -118,37 +118,37 @@ export const dataBase = {
     memorize: '“Não tenham medo. Estou trazendo boas-novas de grande alegria para vocês.” - Lucas 2:10',
     read: [
       {
-        id: '1',
+        id: '13',
         date: 'SEG 13/11',
         ref: 'Isaías 51:11',
         checked: false
       },
       {
-        id: '2',
+        id: '14',
         date: 'TER 14/11',
         ref: 'Lucas 2:9-11',
         checked: false
       },
       {
-        id: '3',
+        id: '15',
         date: 'QUA 15/12',
         ref: 'João 15:9-11',
         checked: false
       },
       {
-        id: '4',
+        id: '16',
         date: 'QUI 16/12',
         ref: 'Romanos 14:17',
         checked: false
       },
       {
-        id: '5',
+        id: '17',
         date: 'SEX 17/12',
         ref: 'Apocalipse 19:6-7',
         checked: false
       },
       {
-        id: '6',
+        id: '18',
         date: 'SAB 18/12',
         ref: 'Salmo 16:7-11',
         checked: false
@@ -165,37 +165,37 @@ export const dataBase = {
     memorize: '“Visto que Deus assim nos amou, nós também devemos amar uns aos outros.” - João 4:11',
     read: [
       {
-        id: '1',
+        id: '19',
         date: 'SEG 20/12',
         ref: 'João 3:16-17',
         checked: false
       },
       {
-        id: '2',
+        id: '20',
         date: 'TER 21/12',
         ref: '1 João 4:10-12',
         checked: false
       },
       {
-        id: '3',
+        id: '21',
         date: 'QUA 22/12',
         ref: '1 Coríntios 13:13',
         checked: false
       },
       {
-        id: '4',
+        id: '22',
         date: 'QUI 23/12',
         ref: 'Romanos 8:37-39',
         checked: false
       },
       {
-        id: '5',
+        id: '23',
         date: 'SEX 24/12',
         ref: 'Lucas 1:26-55',
         checked: false
       },
       {
-        id: '6',
+        id: '24',
         date: 'SAB 25/12',
         ref: 'Lucas 2:1-20',
         checked: false
